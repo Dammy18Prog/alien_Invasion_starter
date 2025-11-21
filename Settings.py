@@ -4,6 +4,12 @@ class Settings:
     def __init__(self):
         """Initialize the game's settings"""
 
+         # Bullet settings
+        self.bullet_speed = 2.0
+        self.bullet_width = 15
+        self.bullet_height = 3
+        self.bullet_color = (255, 0, 0)
+
         # Ship settings
         self.ship_speed = 15.0
 
