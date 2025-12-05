@@ -1,0 +1,14 @@
+class GameStats:
+    """Track statistics for the game."""
+
+    def __init__(self, ai_game):
+        self.settings = ai_game.settings
+        self.reset_stats()
+        self.game_active = False
+        self.score = 0
+        self.level = 1
+        self.high_score = 0
+
+    def reset_stats(self):
+        """Reset stats that can change during the game."""
+        self.ships_left = self.settings.ships_limit
